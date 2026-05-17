@@ -1,0 +1,31 @@
+services:
+  postgres:
+    image: postgres:18-alpine
+    container_name: sql-handbook-pg
+    ports:
+      - "5418:5432"
+    environment:
+      POSTGRES_USER: app
+      POSTGRES_PASSWORD: handbook
+      POSTGRES_DB: handbook
+    volumes:
+      - ./schema/postgres:/docker-entrypoint-initdb.d:ro
+      - pg_data:/var/lib/postgresql/data
+
+  mysql:
+    image: mysql:8.4
+    container_name: sql-handbook-mysql
+    ports:
+      - "3308:3306"
+    environment:
+      MYSQL_ROOT_PASSWORD: rootpw
+      MYSQL_USER: app
+      MYSQL_PASSWORD: handbook
+      MYSQL_DATABASE: handbook
+    volumes:
+      - ./schema/mysql:/docker-entrypoint-initdb.d:ro
+      - mysql_data:/var/lib/mysql
+
+volumes:
+  pg_data:
+  mysql_data:
