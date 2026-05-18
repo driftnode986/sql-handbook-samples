@@ -1,0 +1,42 @@
+Null display is "(NULL)".
+ subscription_id |    plan    |  started   | monthly_jpy 
+-----------------+------------+------------+-------------
+             269 | pro        | 2024-01-01 |        1980
+             538 | enterprise | 2024-01-02 |        9800
+             207 | free       | 2024-01-03 |           0
+             476 | pro        | 2024-01-04 |        1980
+             145 | free       | 2024-01-05 |           0
+(5 rows)
+
+    plan    | total | ended | active | active_rate_pct 
+------------+-------+-------+--------+-----------------
+ enterprise |   120 |     0 |    120 |           100.0
+ free       |   320 |   160 |    160 |            50.0
+ pro        |   360 |   160 |    200 |            55.6
+(3 rows)
+
+ subscription_id | plan |  started   | ended_or_today |     duration      
+-----------------+------+------------+----------------+-------------------
+             269 | pro  | 2024-01-01 | 2026-05-19     | 868 days 09:00:00
+             476 | pro  | 2024-01-04 | 2026-05-19     | 865 days 09:00:00
+             414 | pro  | 2024-01-06 | 2026-05-19     | 863 days 09:00:00
+             352 | pro  | 2024-01-08 | 2024-04-11     | 94 days
+             290 | pro  | 2024-01-10 | 2024-09-26     | 260 days
+(5 rows)
+
+ employee_id |    emp     |  title   | manager_id |  mgr_name  
+-------------+------------+----------+------------+------------
+           1 | CEO Yamada | CEO      |     (NULL) | (頂点)
+           2 | Director 2 | Director |          1 | CEO Yamada
+           3 | Director 3 | Director |          1 | CEO Yamada
+           4 | Director 4 | Director |          1 | CEO Yamada
+           5 | Director 5 | Director |          1 | CEO Yamada
+(5 rows)
+
+ category_id |  root_name  | child_count 
+-------------+-------------+-------------
+           1 | Electronics |           2
+           2 | Books       |           4
+           3 | Home        |           2
+(3 rows)
+

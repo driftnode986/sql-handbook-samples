@@ -1,0 +1,142 @@
+Null display is "(NULL)".
+ full_name | order_id | ordered_date | total_jpy 
+-----------+----------+--------------+-----------
+ User 59   |     3650 | 2023-12-31   |     12150
+ User 69   |     2190 | 2023-12-31   |      7490
+ User 79   |      730 | 2024-01-01   |      2830
+ User 531  |     4380 | 2024-01-01   |     14480
+ User 541  |     2920 | 2024-01-01   |      9820
+(5 rows)
+
+ full_name | order_id | ordered_date | total_jpy 
+-----------+----------+--------------+-----------
+ User 59   |     3650 | 2023-12-31   |     12150
+ User 69   |     2190 | 2023-12-31   |      7490
+ User 79   |      730 | 2024-01-01   |      2830
+ User 531  |     4380 | 2024-01-01   |     14480
+ User 541  |     2920 | 2024-01-01   |      9820
+(5 rows)
+
+ users_with_orders 
+-------------------
+              1000
+(1 row)
+
+ row_count_naive 
+-----------------
+           12500
+(1 row)
+
+ full_name | total_amount 
+-----------+--------------
+ User 880  |       203356
+ User 205  |       199596
+ User 442  |       196566
+ User 284  |       195818
+ User 111  |       194307
+(5 rows)
+
+ order_id | product_id | product_name | quantity | unit_price 
+----------+------------+--------------+----------+------------
+        1 |         44 | Product 44   |        3 |       1765
+        1 |         85 | Product 85   |        4 |       3282
+        1 |        138 | Product 138  |        2 |        342
+        1 |        191 | Product 191  |        5 |       2303
+(4 rows)
+
+ combo_count 
+-------------
+      200000
+(1 row)
+
+    day     | product_id |   name    
+------------+------------+-----------
+ 2025-12-01 |          1 | Product 1
+ 2025-12-01 |          2 | Product 2
+ 2025-12-01 |          3 | Product 3
+ 2025-12-02 |          1 | Product 1
+ 2025-12-02 |          2 | Product 2
+ 2025-12-02 |          3 | Product 3
+ 2025-12-03 |          1 | Product 1
+ 2025-12-03 |          2 | Product 2
+ 2025-12-03 |          3 | Product 3
+ 2025-12-04 |          1 | Product 1
+(10 rows)
+
+ employee_id | employee_name | employee_title | manager_name 
+-------------+---------------+----------------+--------------
+           2 | Director 2    | Director       | CEO Yamada
+           3 | Director 3    | Director       | CEO Yamada
+           4 | Director 4    | Director       | CEO Yamada
+           5 | Director 5    | Director       | CEO Yamada
+           6 | Director 6    | Director       | CEO Yamada
+(5 rows)
+
+ category_id | category_name | parent_name 
+-------------+---------------+-------------
+           4 | Computers     | Electronics
+           5 | Audio         | Electronics
+           6 | Tech          | Books
+           7 | Business      | Books
+           8 | Cooking       | Books
+(5 rows)
+
+ full_name | order_id | ordered_date 
+-----------+----------+--------------
+ User 1    |     4354 | 2025-03-20
+ User 10   |     4540 | 2024-10-27
+ User 100  |     4164 | 2025-06-28
+(3 rows)
+
+ full_name | order_id | status | total_jpy 
+-----------+----------+--------+-----------
+ User 731  |        1 | paid   |       571
+ User 395  |        2 | paid   |       642
+ User 789  |        3 | paid   |       713
+ User 790  |        4 | paid   |       784
+ User 454  |        5 | paid   |       855
+(5 rows)
+
+ full_name | order_id | ordered_date | total_jpy 
+-----------+----------+--------------+-----------
+ User 91   |     4978 | 2024-01-08   |      7438
+ User 831  |     3518 | 2024-01-08   |      2778
+ User 280  |     2058 | 2024-01-08   |     47618
+ User 627  |      598 | 2024-01-08   |     42958
+ User 742  |     4248 | 2024-01-09   |      5108
+(5 rows)
+
+ order_id | ordered_date | product_name | quantity | unit_price | subtotal 
+----------+--------------+--------------+----------+------------+----------
+      100 | 2025-01-04   | Product 154  |        5 |       4597 |    22985
+(1 row)
+
+    day     | order_count | revenue 
+------------+-------------+---------
+ 2025-12-01 |           7 |   95772
+ 2025-12-02 |           7 |  225580
+ 2025-12-03 |           6 |  211164
+ 2025-12-04 |           7 |  161873
+ 2025-12-05 |           9 |  162440
+ 2025-12-06 |           6 |  199533
+ 2025-12-07 |           7 |  209185
+(7 rows)
+
+ employee_name | manager_name | manager_of_manager 
+---------------+--------------+--------------------
+ Manager 7     | Director 2   | CEO Yamada
+ Manager 8     | Director 3   | CEO Yamada
+ Manager 9     | Director 4   | CEO Yamada
+ Manager 10    | Director 5   | CEO Yamada
+ Manager 11    | Director 6   | CEO Yamada
+(5 rows)
+
+ product_name | category_name | parent_category_name 
+--------------+---------------+----------------------
+ Product 1    | Cooking       | Books
+ Product 2    | Speakers      | Audio
+ Product 4    | Travel        | Books
+ Product 5    | Programming   | Tech
+ Product 7    | Furniture     | Home
+(5 rows)
+

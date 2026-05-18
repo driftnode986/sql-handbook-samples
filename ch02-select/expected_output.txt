@@ -1,0 +1,75 @@
+               user_id                |        email        | full_name | signup_date 
+--------------------------------------+---------------------+-----------+-------------
+ 019e3702-806c-76c6-98b4-1a324278bfab | user393@example.com | User 393  | 2025-12-30
+ 019e3702-806b-771a-a26a-4308c940ac66 | user56@example.com  | User 56   | 2025-12-29
+ 019e3702-806d-78e6-9b70-37a4eaa8808b | user786@example.com | User 786  | 2025-12-29
+ 019e3702-806c-79e5-bc09-f987c176d541 | user449@example.com | User 449  | 2025-12-28
+ 019e3702-806c-7cec-a90b-ed49f5c2498c | user505@example.com | User 505  | 2025-12-26
+ 019e3702-806b-7b9f-9472-d1b8d618385c | user168@example.com | User 168  | 2025-12-25
+ 019e3702-806d-7d4f-af6b-afca44a0c916 | user898@example.com | User 898  | 2025-12-25
+ 019e3702-806b-7db1-a51d-0877c2be4a82 | user224@example.com | User 224  | 2025-12-23
+ 019e3702-806d-7f3a-9a40-fe4df91e4f83 | user954@example.com | User 954  | 2025-12-23
+ 019e3702-806d-724e-8524-8bdb383b15be | user617@example.com | User 617  | 2025-12-22
+(10 rows)
+
+ order_id | total_jpy 
+----------+-----------
+     4183 |     49993
+      697 |     49987
+     4880 |     49980
+     1394 |     49974
+     2091 |     49961
+     3485 |     49935
+     4182 |     49922
+      696 |     49916
+     1393 |     49903
+     2090 |     49890
+(10 rows)
+
+               user_id                | full_name |        email        
+--------------------------------------+-----------+---------------------
+ 019e3702-806c-7cda-8263-b7578a67eb8f | User 503  | user503@example.com
+ 019e3702-806b-7b8f-8a0d-99bb511424ad | User 166  | user166@example.com
+ 019e3702-806d-7d3f-9a6f-3e12b12ef7ed | User 896  | user896@example.com
+ 019e3702-806c-7f80-917c-edb9b31e81b8 | User 559  | user559@example.com
+ 019e3702-806b-7da0-9fdb-7d715a84eeea | User 222  | user222@example.com
+ 019e3702-806d-7f24-99ca-2cbf68617ed2 | User 952  | user952@example.com
+ 019e3702-806d-723c-9caf-bd12111a7f15 | User 615  | user615@example.com
+ 019e3702-806c-711a-acd6-81457748d839 | User 278  | user278@example.com
+ 019e3702-806d-7428-97dd-64ec7f5a2f62 | User 671  | user671@example.com
+ 019e3702-806c-7403-9d91-f5202349ba49 | User 334  | user334@example.com
+ 019e3702-806d-76ad-94ca-a21391d2e3db | User 727  | user727@example.com
+ 019e3702-806c-76a8-944c-09819b898acc | User 390  | user390@example.com
+ 019e3702-806b-7704-ac23-1c4335ee4942 | User 53   | user53@example.com
+ 019e3702-806d-78cc-97ca-73ff5b068d8c | User 783  | user783@example.com
+ 019e3702-806c-79ca-8af8-64b36c493774 | User 446  | user446@example.com
+ 019e3702-806b-79b8-b9a8-0286b7085fdc | User 109  | user109@example.com
+ 019e3702-806d-7b26-b905-f25eea9c564e | User 839  | user839@example.com
+ 019e3702-806c-7cd1-a5ac-457069eb51ca | User 502  | user502@example.com
+ 019e3702-806b-7b88-88cc-6814008713b6 | User 165  | user165@example.com
+ 019e3702-806d-7d36-b492-8f7601bdbd9a | User 895  | user895@example.com
+(20 rows)
+
+ country 
+---------
+ DE
+ GB
+ JP
+ US
+(4 rows)
+
+ subscription_id | plan | started_at |  ended_at  | monthly_jpy 
+-----------------+------+------------+------------+-------------
+             320 | free | 2024-10-06 | 2025-03-25 |           0
+             321 | free | 2024-11-04 | 2025-04-30 |           0
+             322 | free | 2024-12-03 | 2025-06-05 |           0
+             323 | free | 2025-01-01 | 2025-07-11 |           0
+             330 | pro  | 2025-07-23 | 2026-03-20 |        1980
+             324 | free | 2025-01-30 |            |           0
+             325 | free | 2025-02-28 |            |           0
+             326 | free | 2025-03-29 |            |           0
+             327 | free | 2025-04-27 |            |           0
+             328 | pro  | 2025-05-26 |            |        1980
+             329 | pro  | 2025-06-24 |            |        1980
+(11 rows)
+
