@@ -1,0 +1,166 @@
+ avg_paid 
+----------
+ 24767.38
+(1 row)
+
+ above_avg_count 
+-----------------
+            1991
+(1 row)
+
+ refunded_avg 
+--------------
+             
+(1 row)
+
+ full_name | last_paid_date 
+-----------+----------------
+ User 1    | 2025-03-20
+ User 2    | 
+ User 3    | 
+(3 rows)
+
+  category   | revenue 
+-------------+---------
+ Electronics | 7046015
+ Kitchen     | 6392058
+ Travel      | 5738219
+ Home        | 5118033
+ Knives      | 5107711
+(5 rows)
+
+ full_name | last_amount | last_date  
+-----------+-------------+------------
+ User 1    |       12634 | 2025-03-20
+ User 4    |       17036 | 2025-01-31
+ User 5    |       17107 | 2025-02-11
+(3 rows)
+
+ in_subs 
+---------
+     800
+(1 row)
+
+ in_subs_any 
+-------------
+         800
+(1 row)
+
+ not_in_result | in_result 
+---------------+-----------
+               | 
+(1 row)
+
+ no_active_via_not_in 
+----------------------
+                  520
+(1 row)
+
+ method_a 
+----------
+      520
+(1 row)
+
+ method_b 
+----------
+      520
+(1 row)
+
+ method_c 
+----------
+      520
+(1 row)
+
+ category_id | avg_p 
+-------------+-------
+           1 |  2210
+           2 |  2071
+           3 |  2182
+           4 |  2293
+           5 |  2404
+(5 rows)
+
+ gt_any_cat_avg 
+----------------
+            100
+(1 row)
+
+ gt_all_cat_avg 
+----------------
+             76
+(1 row)
+
+ result 
+--------
+ t
+(1 row)
+
+ order_id | ordered_at | total_jpy 
+----------+------------+-----------
+        2 | 2024-01-22 |       642
+     1002 | 2024-03-13 |     22142
+     2002 | 2024-05-01 |     43642
+     3002 | 2024-06-21 |     15642
+     4002 | 2024-08-10 |     37142
+(5 rows)
+
+ order_id | status 
+----------+--------
+        2 | paid
+        3 | paid
+     1002 | paid
+     1003 | paid
+     2002 | paid
+(5 rows)
+
+ order_id | total_jpy 
+----------+-----------
+     4183 |     49993
+      697 |     49987
+     4880 |     49980
+     1394 |     49974
+     2091 |     49961
+(5 rows)
+
+ full_name | country | last_paid_date | last_paid_amount 
+-----------+---------+----------------+------------------
+ User 1    | GB      | 2025-03-20     |            12634
+ User 2    | DE      |                |                 
+ User 3    | JP      |                |                 
+ User 4    | JP      | 2025-01-31     |            17036
+ User 5    | JP      | 2025-02-11     |            17107
+(5 rows)
+
+ product_id |    name     | price_jpy 
+------------+-------------+-----------
+        132 | Product 132 |      4984
+        131 | Product 131 |      4947
+        130 | Product 130 |      4910
+        129 | Product 129 |      4873
+        128 | Product 128 |      4836
+(5 rows)
+
+ method_a 
+----------
+      520
+(1 row)
+
+ method_b 
+----------
+      520
+(1 row)
+
+ method_c 
+----------
+      520
+(1 row)
+
+ category  |   product   | price_jpy 
+-----------+-------------+-----------
+ Audio     | Product 132 |      4984
+ Cookware  | Product 131 |      4947
+ Kitchen   | Product 130 |      4910
+ Computers | Product 129 |      4873
+ AI        | Product 128 |      4836
+(5 rows)
+

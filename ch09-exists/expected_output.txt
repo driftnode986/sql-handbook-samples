@@ -1,0 +1,134 @@
+ has_active_sub 
+----------------
+            480
+(1 row)
+
+ full_name | country 
+-----------+---------
+ User 1    | GB
+ User 4    | JP
+ User 6    | JP
+ User 9    | JP
+ User 11   | GB
+(5 rows)
+
+ full_name 
+-----------
+ User 6
+ User 17
+ User 18
+(3 rows)
+
+ no_active_sub 
+---------------
+           520
+(1 row)
+
+ full_name | country 
+-----------+---------
+ User 2    | DE
+ User 3    | JP
+ User 5    | JP
+ User 7    | JP
+ User 8    | JP
+(5 rows)
+
+ safe_count 
+------------
+        520
+(1 row)
+
+ via_anti_join 
+---------------
+           520
+(1 row)
+
+ via_inner_join 
+----------------
+            480
+(1 row)
+
+ join_all_subs 
+---------------
+           800
+(1 row)
+
+ via_distinct_join 
+-------------------
+               800
+(1 row)
+
+ via_exists 
+------------
+        800
+(1 row)
+
+ via_in 
+--------
+    800
+(1 row)
+
+ all_3_target 
+--------------
+            0
+(1 row)
+
+ via_having 
+------------
+          0
+(1 row)
+
+ order_id | full_name | total_jpy 
+----------+-----------+-----------
+     4183 | User 287  |     49993
+      697 | User 665  |     49987
+     1394 | User 825  |     49974
+     2091 | User 592  |     49961
+     4181 | User 229  |     49851
+(5 rows)
+
+ active_and_paid 
+-----------------
+             480
+(1 row)
+
+ full_name | country | plan | monthly_jpy 
+-----------+---------+------+-------------
+ User 1    | GB      | free |           0
+ User 4    | JP      | free |           0
+ User 6    | JP      | pro  |        1980
+ User 9    | JP      | free |           0
+ User 11   | GB      | free |           0
+(5 rows)
+
+ country | no_active_cnt 
+---------+---------------
+ JP      |           365
+ US      |            56
+ GB      |            51
+ DE      |            48
+(4 rows)
+
+ order_id | full_name | total_jpy 
+----------+-----------+-----------
+     4183 | User 287  |     49993
+      697 | User 665  |     49987
+     1394 | User 825  |     49974
+     2091 | User 592  |     49961
+     4181 | User 229  |     49851
+(5 rows)
+
+ full_name | country 
+-----------+---------
+ User 1    | GB
+ User 4    | JP
+ User 5    | JP
+ User 6    | JP
+ User 7    | JP
+(5 rows)
+
+ users_with_all_status 
+-----------------------
+                     0
+(1 row)
+
