@@ -1,0 +1,131 @@
+Null display is "(NULL)".
+ full_name | country | paid_cnt | paid_revenue 
+-----------+---------+----------+--------------
+ User 665  | JP      |        5 |       167935
+ User 664  | JP      |        5 |       167580
+ User 1000 | US      |        5 |       167225
+ User 269  | JP      |        5 |       166870
+ User 605  | JP      |        5 |       166515
+(5 rows)
+
+ full_name | country | paid_cnt | paid_revenue 
+-----------+---------+----------+--------------
+ User 665  | JP      |        5 |       167935
+ User 664  | JP      |        5 |       167580
+ User 1000 | US      |        5 |       167225
+ User 269  | JP      |        5 |       166870
+ User 605  | JP      |        5 |       166515
+(5 rows)
+
+ full_name | paid_cnt | total  
+-----------+----------+--------
+ User 665  |        5 | 167935
+ User 664  |        5 | 167580
+ User 1000 |        5 | 167225
+(3 rows)
+
+ full_name | paid_cnt | total_paid_revenue | category_name | category_spend 
+-----------+----------+--------------------+---------------+----------------
+ User 1    |        5 |             145170 | Cooking       |          59144
+ User 1    |        5 |             145170 | Knives        |          29578
+ User 1    |        5 |             145170 | AI            |          14783
+(3 rows)
+
+ country | avg_revenue 
+---------+-------------
+ JP      |      124296
+ US      |      124075
+ DE      |      122102
+ GB      |      121823
+(4 rows)
+
+   month    | revenue | prev_revenue |  diff   
+------------+---------+--------------+---------
+ 2023-12-01 |   19640 |       (NULL) |  (NULL)
+ 2024-01-01 | 4338736 |        19640 | 4319096
+ 2024-02-01 | 3694268 |      4338736 | -644468
+ 2024-03-01 | 4122269 |      3694268 |  428001
+ 2024-04-01 | 3961270 |      4122269 | -160999
+(5 rows)
+
+ count 
+-------
+  4000
+(1 row)
+
+ count 
+-------
+  4000
+(1 row)
+
+ full_name 
+-----------
+ User 1
+ User 100
+ User 101
+(3 rows)
+
+ full_name 
+-----------
+ User 1
+ User 100
+ User 101
+(3 rows)
+
+   importance   | count | revenue  
+----------------+-------+----------
+ A1: 高額成立   |  1578 | 63128629
+ A2: 標準成立   |  1579 | 31567918
+ A3: 少額成立   |   843 |  4372953
+ B1: 高額逃した |   197 |  7881576
+ C1: 高額保留   |   197 |  7875573
+ D: その他      |   606 |  8991851
+(6 rows)
+
+ full_name | paid_cnt | total_paid_revenue | category_name | category_spend 
+-----------+----------+--------------------+---------------+----------------
+ User 1    |        5 |             145170 | Cooking       |          59144
+ User 1    |        5 |             145170 | Knives        |          29578
+ User 1    |        5 |             145170 | AI            |          14783
+(3 rows)
+
+   month    | revenue | prev_revenue |  diff   
+------------+---------+--------------+---------
+ 2023-12-01 |   19640 |       (NULL) |  (NULL)
+ 2024-01-01 | 4338736 |        19640 | 4319096
+ 2024-02-01 | 3694268 |      4338736 | -644468
+ 2024-03-01 | 4122269 |      3694268 |  428001
+ 2024-04-01 | 3961270 |      4122269 | -160999
+(5 rows)
+
+ country | full_name | total_revenue 
+---------+-----------+---------------
+ JP      | User 665  |        167935
+ US      | User 1000 |        167225
+ GB      | User 941  |        166160
+ DE      | User 92   |        163675
+(4 rows)
+
+ full_name 
+-----------
+ User 103
+ User 105
+ User 108
+(3 rows)
+
+ full_name 
+-----------
+ User 103
+ User 105
+ User 108
+(3 rows)
+
+ product_id |    name     | unique_buyers | repeat_buyers | repeat_pct 
+------------+-------------+---------------+---------------+------------
+         80 | Product 80  |            15 |            15 |      100.0
+        184 | Product 184 |            15 |            15 |      100.0
+          8 | Product 8   |            15 |            15 |      100.0
+         68 | Product 68  |            15 |            15 |      100.0
+         70 | Product 70  |            15 |            15 |      100.0
+(5 rows)
+

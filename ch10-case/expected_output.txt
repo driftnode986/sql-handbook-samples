@@ -1,0 +1,173 @@
+Null display is "(NULL)".
+ order_id |  status   | status_label 
+----------+-----------+--------------
+        7 | paid      | 支払い済み
+        8 | cancelled | キャンセル
+        9 | pending   | 保留中
+       10 | paid      | 支払い済み
+(4 rows)
+
+ order_id |  status   | status_label 
+----------+-----------+--------------
+        7 | paid      | 支払い済み
+        8 | cancelled | キャンセル
+        9 | pending   | 保留中
+       10 | paid      | 支払い済み
+(4 rows)
+
+ subscription_id |        ended_at        | sub_status 
+-----------------+------------------------+------------
+               1 | 2024-03-06 15:00:00+00 | 終了
+               2 | 2024-04-11 15:00:00+00 | 終了
+               3 | 2024-05-17 15:00:00+00 | 終了
+               4 | (NULL)                 | 終了
+(4 rows)
+
+ subscription_id |        ended_at        | sub_status 
+-----------------+------------------------+------------
+               1 | 2024-03-06 15:00:00+00 | 終了
+               2 | 2024-04-11 15:00:00+00 | 終了
+               3 | 2024-05-17 15:00:00+00 | 終了
+               4 | (NULL)                 | 現役
+(4 rows)
+
+ full_name | order_cnt | total_revenue | avg_revenue 
+-----------+-----------+---------------+-------------
+ User 1    |         5 |        145170 |       29034
+ User 2    |         5 |        122340 |       24468
+ User 3    |         5 |        122695 |       24539
+(3 rows)
+
+ total_orders | paid_orders | cancelled_orders 
+--------------+-------------+------------------
+         5000 |        4000 |              500
+(1 row)
+
+ safe_type 
+-----------
+ 100
+(1 row)
+
+ amount_bucket | paid_cnt | cancelled_cnt | pending_cnt | paid_total 
+---------------+----------+---------------+-------------+------------
+ large         |     2017 |           253 |         252 |   34826247
+ small         |      405 |            50 |          51 |    1114624
+ xlarge        |     1578 |           197 |         197 |   63128629
+(3 rows)
+
+ amount_bucket | paid_cnt | cancelled_cnt | pending_cnt | paid_total 
+---------------+----------+---------------+-------------+------------
+ large         |     2017 |           253 |         252 |   34826247
+ small         |      405 |            50 |          51 |    1114624
+ xlarge        |     1578 |           197 |         197 |   63128629
+(3 rows)
+
+    plan    |   mrr   
+------------+---------
+ enterprise | 1176000
+ pro        |  396000
+ free       |       0
+(3 rows)
+
+ price_bucket | item_lines | bucket_revenue 
+--------------+------------+----------------
+ 0-999        |       3000 |       22406666
+ 1000-2999    |       6125 |       46754936
+ 3000+        |       3375 |       26450973
+(3 rows)
+
+ order_id |  status   | total_jpy 
+----------+-----------+-----------
+        8 | cancelled |      1068
+        9 | pending   |      1139
+       15 | paid      |      1565
+       16 | paid      |      1636
+       17 | paid      |      1707
+       18 | cancelled |      1778
+       19 | pending   |      1849
+       20 | paid      |      1920
+(8 rows)
+
+ subscription_id |   effective_end_case   | effective_end_coalesce 
+-----------------+------------------------+------------------------
+               1 | 2024-03-06 15:00:00+00 | 2024-03-06 15:00:00+00
+               2 | 2024-04-11 15:00:00+00 | 2024-04-11 15:00:00+00
+               4 | 2026-05-19 00:00:00+00 | 2026-05-19 00:00:00+00
+(3 rows)
+
+ full_name | order_cnt | total_revenue | avg_revenue 
+-----------+-----------+---------------+-------------
+ User 1    |         5 |        145170 |       29034
+ User 2    |         5 |        122340 |       24468
+ User 3    |         5 |        122695 |       24539
+(3 rows)
+
+ pg_greatest | pg_least 
+-------------+----------
+          20 |       10
+(1 row)
+
+ safe_greatest 
+---------------
+            20
+(1 row)
+
+ order_id | total_jpy | is_large_order 
+----------+-----------+----------------
+        1 |       571 | f
+      416 |     30036 | t
+      500 |     36000 | t
+(3 rows)
+
+ order_id | total_jpy | is_large_order 
+----------+-----------+----------------
+        1 |       571 | f
+      416 |     30036 | t
+      500 |     36000 | t
+(3 rows)
+
+ order_id |  status   | total_jpy |   importance   
+----------+-----------+-----------+----------------
+        1 | paid      |       571 | A3: 少額成立
+        8 | cancelled |      1068 | D: その他
+      134 | paid      |     10014 | A2: 標準成立
+      416 | paid      |     30036 | A1: 高額成立
+      418 | cancelled |     30178 | B1: 高額逃した
+      419 | pending   |     30249 | C1: 高額保留
+(6 rows)
+
+    amount_bucket    | order_cnt | total_revenue 
+---------------------+-----------+---------------
+ small (<5000)       |       506 |       1393073
+ medium (5000-9999)  |       549 |       4087262
+ large (10000-29999) |      1973 |      39452387
+ xlarge (>=30000)    |      1972 |      78885778
+(4 rows)
+
+ amount_bucket | paid_cnt | cancelled_cnt | pending_cnt | paid_revenue 
+---------------+----------+---------------+-------------+--------------
+ large         |     2017 |           253 |         252 |     34826247
+ small         |      405 |            50 |          51 |      1114624
+ xlarge        |     1578 |           197 |         197 |     63128629
+(3 rows)
+
+    plan    |   mrr   | active_subs 
+------------+---------+-------------
+ enterprise | 1176000 |         120
+ pro        |  396000 |         200
+ free       |       0 |         160
+(3 rows)
+
+ price_bucket | item_lines | bucket_revenue | pct  
+--------------+------------+----------------+------
+ 0-999        |       3000 |       22406666 | 23.4
+ 1000-2999    |       6125 |       46754936 | 48.9
+ 3000+        |       3375 |       26450973 | 27.7
+(3 rows)
+
+      depth       | category_cnt |                                                                           sample_names                                                                            
+------------------+--------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------
+ level 1 (root)   |            3 | Electronics, Books, Home
+ level 2+ (child) |           17 | Gaming Laptops, Computers, Tech, Furniture, Laptops, Headphones, Programming, Cookware, Kitchen, Desktops, Audio, Speakers, Business, Knives, AI, Cooking, Travel
+(2 rows)
+
