@@ -1,0 +1,221 @@
+Null display is "(NULL)".
+Border style is 1.
+  status   | count | total_revenue 
+-----------+-------+---------------
+ cancelled |   500 |      12381500
+ paid      |  4000 |      99069500
+ pending   |   500 |      12367500
+(3 rows)
+
+               user_id                | full_name | count 
+--------------------------------------+-----------+-------
+ 019e3702-806d-73ac-8597-b3f96b82c6d7 | User 657  |     5
+ 019e3702-806d-7b62-a1ac-a70c8594eeb4 | User 846  |     5
+ 019e3702-806c-7de6-9ece-9b3bbe185a59 | User 532  |     5
+(3 rows)
+
+ rows_all | rows_with_value | distinct_status 
+----------+-----------------+-----------------
+     5000 |            5000 |               3
+(1 row)
+
+ rows_all | rows_ended 
+----------+------------
+      800 |        320
+(1 row)
+
+ sum_total | row_count | avg_total 
+-----------+-----------+-----------
+    (NULL) |         0 |    (NULL)
+(1 row)
+
+ sum_total | row_count 
+-----------+-----------
+         0 |         0
+(1 row)
+
+ latest_order | earliest_order 
+--------------+----------------
+ 2025-12-30   | 2023-12-31
+(1 row)
+
+      avg_all       |    avg_distinct    
+--------------------+--------------------
+ 24767.375000000000 | 24767.375000000000
+(1 row)
+
+  month  | order_count 
+---------+-------------
+ 2025-01 |         213
+ 2025-03 |         212
+ 2025-05 |         211
+ 2025-07 |         211
+ 2025-08 |         212
+(5 rows)
+
+ row_count 
+-----------
+      5000
+(1 row)
+
+ revenue | statuses | status_array 
+---------+----------+--------------
+       0 |          | {}
+(1 row)
+
+ full_name | total  
+-----------+--------
+ User 1    | 145170
+(1 row)
+
+ full_name | total  
+-----------+--------
+ User 1    | 435510
+(1 row)
+
+ full_name | total  
+-----------+--------
+ User 1    | 103505
+(1 row)
+
+ total | paid_count | cancelled_count | paid_revenue 
+-------+------------+-----------------+--------------
+  5000 |       4000 |             500 |     99069500
+(1 row)
+
+ category |                                                   products_by_price_desc                                                    
+----------+-----------------------------------------------------------------------------------------------------------------------------
+ Books    | Product 123, Product 103, Product 83, Product 63, Product 183, Product 43, Product 163, Product 23, Product 143, Product 3
+ Knives   | Product 114, Product 94, Product 74, Product 194, Product 54, Product 174, Product 34, Product 154, Product 14, Product 134
+(2 rows)
+
+ category |                                                                 products                                                                 
+----------+------------------------------------------------------------------------------------------------------------------------------------------
+ Books    | {"Product 123","Product 103","Product 83","Product 63","Product 183","Product 43","Product 163","Product 23","Product 143","Product 3"}
+ Knives   | {"Product 114","Product 94","Product 74","Product 194","Product 54","Product 174","Product 34","Product 154","Product 14","Product 134"}
+(2 rows)
+
+ country | revenue  | order_count | grp 
+---------+----------+-------------+-----
+ DE      |  9279720 |         380 |   0
+ GB      |  9014920 |         370 |   0
+ JP      | 70848890 |        2850 |   0
+ US      |  9925970 |         400 |   0
+ ALL     | 99069500 |        4000 |   1
+(5 rows)
+
+  month  |  status   | cnt 
+---------+-----------+-----
+ 2025-10 | cancelled |  20
+ 2025-10 | paid      | 165
+ 2025-10 | pending   |  24
+ 2025-10 | ALL       | 209
+ 2025-11 | cancelled |  21
+ 2025-11 | paid      | 164
+ 2025-11 | pending   |  20
+ 2025-11 | ALL       | 205
+ 2025-12 | cancelled |  20
+ 2025-12 | paid      | 163
+ 2025-12 | pending   |  20
+ 2025-12 | ALL       | 203
+ ALL     | ALL       | 617
+(13 rows)
+
+ country |    plan    | sub_count | gc | gp 
+---------+------------+-----------+----+----
+ DE      | enterprise |        13 |  0 |  0
+ DE      | free       |        30 |  0 |  0
+ DE      | pro        |        38 |  0 |  0
+ GB      | enterprise |        14 |  0 |  0
+ GB      | free       |        31 |  0 |  0
+ GB      | pro        |        33 |  0 |  0
+ JP      | enterprise |        86 |  0 |  0
+ JP      | free       |       226 |  0 |  0
+ JP      | pro        |       248 |  0 |  0
+ US      | enterprise |         7 |  0 |  0
+ US      | free       |        33 |  0 |  0
+ US      | pro        |        41 |  0 |  0
+ DE      | ALL        |        81 |  0 |  1
+ GB      | ALL        |        78 |  0 |  1
+ JP      | ALL        |       560 |  0 |  1
+ US      | ALL        |        81 |  0 |  1
+ ALL     | enterprise |       120 |  1 |  0
+ ALL     | free       |       320 |  1 |  0
+ ALL     | pro        |       360 |  1 |  0
+ ALL     | ALL        |       800 |  1 |  1
+(20 rows)
+
+ country |    plan    | sub_count 
+---------+------------+-----------
+ DE      | ALL        |        81
+ GB      | ALL        |        78
+ JP      | ALL        |       560
+ US      | ALL        |        81
+ ALL     | enterprise |       120
+ ALL     | free       |       320
+ ALL     | pro        |       360
+ ALL     | ALL        |       800
+(8 rows)
+
+               user_id                | full_name | count 
+--------------------------------------+-----------+-------
+ 019e3702-806b-70d7-9022-37a48f3d5d41 | User 1    |     5
+ 019e3702-806b-755c-b4c2-09666e4a9996 | User 2    |     5
+ 019e3702-806b-757e-8c7e-6f8ea8c6e20f | User 3    |     5
+(3 rows)
+
+  category   | revenue_jpy 
+-------------+-------------
+ Electronics |     7046015
+ Kitchen     |     6392058
+ Travel      |     5738219
+ Home        |     5118033
+ Knives      |     5107711
+(5 rows)
+
+   month    | total_orders | paid_orders | cancelled_orders | paid_revenue 
+------------+--------------+-------------+------------------+--------------
+ 2025-10-01 |          209 |         165 |               20 |      4146216
+ 2025-11-01 |          205 |         164 |               21 |      4151970
+ 2025-12-01 |          203 |         163 |               20 |      4289592
+(3 rows)
+
+    plan    | active_count | total_count | avg_days 
+------------+--------------+-------------+----------
+ enterprise |          120 |         120 |      538
+ free       |          160 |         320 |      390
+ pro        |          200 |         360 |      399
+(3 rows)
+
+ country | revenue  | order_count | grp 
+---------+----------+-------------+-----
+ DE      |  9279720 |         380 |   0
+ GB      |  9014920 |         370 |   0
+ JP      | 70848890 |        2850 |   0
+ US      |  9925970 |         400 |   0
+ ALL     | 99069500 |        4000 |   1
+(5 rows)
+
+ full_name | order_count | avg_jpy | total_jpy 
+-----------+-------------+---------+-----------
+ User 665  |           5 |   33587 |    167935
+ User 664  |           5 |   33516 |    167580
+ User 1000 |           5 |   33445 |    167225
+ User 269  |           5 |   33374 |    166870
+ User 605  |           5 |   33303 |    166515
+ User 941  |           5 |   33232 |    166160
+ User 940  |           5 |   33161 |    165805
+ User 546  |           5 |   33090 |    165450
+ User 487  |           5 |   32877 |    164385
+ User 93   |           5 |   32806 |    164030
+(10 rows)
+
+  product  | buyer_count |                                                                      buyers                                                                       
+-----------+-------------+---------------------------------------------------------------------------------------------------------------------------------------------------
+ Product 1 |          10 | User 114, User 239, User 35, User 383, User 462, User 542, User 621, User 80, User 834, User 924
+ Product 2 |          10 | User 196, User 241, User 329, User 37, User 443, User 464, User 544, User 623, User 812, User 846
+ Product 3 |           5 | User 118, User 275, User 39, User 466, User 84
+ Product 4 |          15 | User 120, User 25, User 272, User 407, User 468, User 487, User 49, User 566, User 59, User 710, User 771, User 816, User 869, User 914, User 951
+ Product 5 |           5 | User 205, User 284, User 497, User 587, User 969
+(5 rows)
+
