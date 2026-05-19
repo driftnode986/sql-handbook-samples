@@ -1,0 +1,65 @@
+ depth | category_id |                        path                        
+-------+-------------+----------------------------------------------------
+     0 |           2 | Books
+     1 |           7 | Books > Business
+     1 |           8 | Books > Cooking
+     1 |           6 | Books > Tech
+     2 |          17 | Books > Tech > AI
+     2 |          16 | Books > Tech > Programming
+     1 |           9 | Books > Travel
+     0 |           1 | Electronics
+     1 |           5 | Electronics > Audio
+     2 |          14 | Electronics > Audio > Headphones
+     2 |          15 | Electronics > Audio > Speakers
+     1 |           4 | Electronics > Computers
+     2 |          13 | Electronics > Computers > Desktops
+     2 |          12 | Electronics > Computers > Laptops
+     3 |          20 | Electronics > Computers > Laptops > Gaming Laptops
+     0 |           3 | Home
+     1 |          10 | Home > Furniture
+     1 |          11 | Home > Kitchen
+     2 |          18 | Home > Kitchen > Cookware
+     2 |          19 | Home > Kitchen > Knives
+(20 rows)
+
+ depth | member_cnt |                                                                               members                                                                               
+-------+------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------
+     0 |          1 | Director 2
+     1 |          4 | Manager 7, Manager 12, Manager 17, Manager 22
+     2 |         15 | Member 27, Member 32, Member 37, Member 42, Member 47, Member 52, Member 57, Member 62, Member 67, Member 72, Member 77, Member 82, Member 87, Member 92, Member 97
+(3 rows)
+
+ depth | comment_id |               body_excerpt               
+-------+------------+------------------------------------------
+     0 |          1 | Comment body #1 lorem ipsum dolor sit am
+     1 |        501 | Comment body #501 lorem ipsum dolor sit 
+     2 |       1501 | Comment body #1501 lorem ipsum dolor sit
+     1 |       1001 | Comment body #1001 lorem ipsum dolor sit
+(4 rows)
+
+  category   | distinct_products | sold_units | revenue_jpy 
+-------------+-------------------+------------+-------------
+ Electronics |                80 |       3500 |    27289220
+ Home        |                50 |       3000 |    25534244
+ Books       |                70 |       3500 |    24330942
+(3 rows)
+
+ sale_date  | order_cnt | revenue_jpy 
+------------+-----------+-------------
+ 2025-12-01 |         7 |       95772
+ 2025-12-02 |         7 |      225580
+ 2025-12-03 |         6 |      211164
+ 2025-12-04 |         7 |      161873
+ 2025-12-05 |         9 |      162440
+ 2025-12-06 |         6 |      199533
+ 2025-12-07 |         7 |      209185
+ 2025-12-08 |         4 |       90568
+ 2025-12-09 |         0 |           0
+ 2025-12-10 |         2 |       52520
+ 2025-12-11 |         7 |      195172
+ 2025-12-12 |         7 |       96269
+ 2025-12-13 |         7 |      226077
+ 2025-12-14 |         6 |      211590
+ 2025-12-15 |         7 |      162370
+(15 rows)
+
