@@ -1,6 +1,6 @@
 # sql-handbook-samples
 
-書籍『実践 SQL ハンドブック』(著: 牧野 誠) のサンプル DB と業務クエリ集の repo。
+書籍『[実践 SQL ハンドブック](https://www.amazon.co.jp/dp/B0H28SX1N9)』(著: 牧野 誠 / Amazon Kindle) のサンプル DB と業務クエリ集の repo。
 
 ## quick start (5 分)
 
